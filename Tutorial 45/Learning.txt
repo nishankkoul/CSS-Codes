@@ -1,0 +1,1 @@
+We can inculcate smooth transitions from one state to the other using css transitions property.

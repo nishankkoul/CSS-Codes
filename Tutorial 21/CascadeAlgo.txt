@@ -1,0 +1,18 @@
+Cascade Algorithm - 
+
+CSS stands for Cascading Stylesheets. The cascade is the Algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason the text of the button styled will be purple.
+Understanding the cascade Algorithm helps you understand how browser resolves conflicts like this. The cascade algo has 4 distinct stages: 
+
+a. Position and order of appearance - the order in which your CSS rules appear. 
+b. Specificity - an algo which determines which CSS selector has the strongest match. Inline style > ID selector >   Class selector > Element Selector > Universal Selector
+c. Origin - the order in which CSS appears and where it comes from. whether that is a browsered style, CSS from a browser extension or your authored CSS.
+d. Important - some CSS rules are weighted more heavily than others, especially with the !important rule type
+
+(Read codewithharry.com to gain a better Understanding)
+
+To calculate Specificity, assign a value to each part of the Selector
+- Universal Selector: 0
+- Element Selector & Pseudo Elements: 1
+- Class Selector: 10
+- ID Selectors: 100
+- Inline Selectors: 1000

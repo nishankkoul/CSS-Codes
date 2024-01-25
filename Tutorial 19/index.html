@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts, Text & Color Properties</title>
+    <!-- You can import google fonts - type google fonts and then put the import url under style tag or you can also add link directly under head tag-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+        /* There is a set of families that css has so for example in p tag if Arial font is not present in our system then it will consider the next font i.e. Helvetica and so on... */
+        h2{
+            font-family: 'Baloo 2', sans-serif;
+            /* if you want to align the text in the center */
+            text-align: center;
+        }
+        .example{
+            font-family: Arial, Helvetica, sans-serif;
+            /* Use font-style if you want to make the text as italic */
+            font-style: italic;
+            /* Use font-weight if you want to bold the text */
+            font-weight: 600;
+            /* If you want to underline text, you can use text-decoration */
+            text-decoration: underline;
+            /* The default font size of p tag is 16px */
+            font-size: 20px;
+        }
+        .lh{
+            /* If you want to give space bw lines of paragraph, use line height */
+            line-height: 4;
+        }
+        .ls{
+            letter-spacing: 20px;
+        }
+        /* This will capitalize the first letter of each word */
+        h1{
+            text-transform: capitalize;
+            /* If you want a coloured underline */
+            text-decoration: underline;
+            text-decoration-color: aqua;
+            text-decoration-style: solid;
+            text-decoration-thickness: 7px;
+            /* If you want to give some indentation, its like adding padding left */
+            text-indent: 50px;
+        }
+        .lorem{
+            width: 40px;
+            border: 2px solid red;
+            /* If the width specified for the element exceeds the border, the we can use text overflow and specifying the text overflow as hidden. We can also use overflow as scroll */
+            text-overflow: ellipsis;
+            overflow: scroll;   
+        }
+        .lorem1{
+            width: 200px;
+            border: 2px solid green;
+            /* If you want the text to continue and whenever it encounters the border, the word should break */
+            word-break: break-all;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Fonts</h2>
+        <p class = "example">This is a video on fonts.</p>
+
+        <p class = "lh">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus qui, dignissimos modi, sed eos laboriosam officia minima, autem consequuntur suscipit incidunt unde? Laborum animi voluptatibus possimus porro dicta incidunt debitis cumque ullam ducimus sint.</p>
+
+        <p class = "ls">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim suscipit vitae dolore distinctio fugit cum! Libero enim quia sunt harum cumque dolorem, atque, saepe deleniti consequuntur mollitia, facilis sint rem.</p>
+
+        <h1>about fonts</h1>
+
+        <p class = "lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, quisquam quaerat ad nostrum explicabo pariatur? Libero labore, sed ex saepe id quasi?</p>
+
+        <p class = "lorem1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, laboriosam ad, atque provident asperiores consequatur in quam necessitatibus a quisquam sit recusandae perferendis distinctio? Veniam!5</p>
+</body>
+</html>

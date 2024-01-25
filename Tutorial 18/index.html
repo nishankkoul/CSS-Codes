@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            /* We use box-sizing: border-box if we want the padding and border to be included in the height */
+            box-sizing: border-box;
+        }
+        .box2{
+            color: yellow;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid green;
+            height: 200px;
+            /* We use box-sizing: border-box if we want the padding and border to be included in the height */
+            box-sizing: border-box;
+        }
+            /* If 2 elements have a collapsing margin then the greater margin only will be applied, in this case box1 and box2 will be separated by a margin of 25px and not 50px */
+            /* See google images on margin collapse */
+    </style>
+</head>
+<body>
+    <div class="box box1">Hey there, I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+</html>

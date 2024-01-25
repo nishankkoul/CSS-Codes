@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flexbox</title>
+    <style>
+      .container {
+        /* These properties work only in the parent container */
+        border: 2px solid red;
+        height: 30vh;
+        display: flex;  /* This will align the items from left to right */
+        /* To horizontally center the items we use justify-content: center */
+        justify-content: center;
+        align-items: center;  /* This vertically aligns the items*/
+        justify-content: space-around; /* There are multiple properties that flexbox holds */ 
+        /* If there are mutiple items and its overflowing, then we can wrap around */
+        /* flex-wrap: wrap; */
+        /* If there are multiple lines we don't use align items center, we use align-content:center */
+      } 
+      .item {
+        height: 20px;
+        width: 20px;
+        background-color: aqua;
+        border: 2px solid black;
+        margin: 3px; /* We can also use gap property in the parent container other than this */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .container img{
+            /* This will blur the image by 10px */
+            filter: blur(10px);  
+        }
+        .hrithik{
+            /* This will increase the brightness by 150% */
+            filter: brightness(150%);
+            filter: contrast(2);
+            /* Changing opacity to 0 will transparent the image and 1 to full display */
+            filter: opacity(0.77);
+        }
+        .akshay{
+            /* This will turn the image black and white */
+            filter: grayscale(99%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="b1.jpg" alt="">
+    </div>
+    <div class="hrithik">
+        <img src="https://www.bollywoodhungama.com/wp-content/uploads/2023/01/Hrithik-Roshan-opens-up-about-620.jpg" alt="">
+    </div>
+    <div class="akshay">
+        <img src="https://img.etimg.com/photo/103527734/103527734.jpg" alt="" height="550px">
+    </div>
+</body>
+</html>

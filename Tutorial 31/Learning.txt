@@ -1,0 +1,6 @@
+Media Queries are very important for responsiveness of the website. 
+
+Syntax:
+
+@media not|onlt mediatype and (expressions)
+CSS Code;

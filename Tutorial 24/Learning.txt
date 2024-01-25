@@ -1,0 +1,17 @@
+Box shadow style code:  
+box-shadow: h-offset v-offset blur spread color inset;
+
+Here,
+- h-offset and v-offset represent shadow's horizontal and vertical position
+- blur: larger the value, blurier the shadow
+- spread: expands or shrinks the shadow size
+- color represents the shadows color
+- inset: makes the shadow inner
+
+Similar to box shadow we can also give text-shadow
+
+Borders and Outlines are very similar including the style code: the basic differences are: 
+- Position: Outlines don't take up any space, they're drawn around the element outside of any border 
+- Rounder Corners: Borders can have rounded borders whereas outlines cannot
+- Width: Borders can have varying widths whereas Outlines have a uniform Width
+- Offset: Using the outline offset property, you can set the space bw an outline and the edge of a boundary of an element.

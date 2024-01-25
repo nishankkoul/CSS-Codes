@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            /* This property prevents overflow */
+
+        }
+        img{
+            float: left;
+            /* On applying float:left property we can see that the image is floating to the left and rest of the content is floating to the right of it. */
+            /* We can see that image is overflowing so in the parent container we can apply the property display: flow-root */
+        }
+        .card{
+            border: 2px solid red;
+        }
+        /* .card:nth-child(2)
+        {
+            background-color: aqua;
+            clear: left;
+            Clear:left this will not allow any image that is present on the left side and will bring the text down
+        } */
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <div class="card">
+            <img src="gettyimages-1837060401-612x612.jpg" alt="" height="230px">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio ipsum odit iste, nulla laborum eveniet ea enim dolorum commodi natus reprehenderit sed repellendus? Minus laborum natus cumque repellat sapiente autem nesciunt quo quaerat sequi assumenda in inventore accusamus libero explicabo, vitae error earum deserunt amet.</p>
+        </div>
+        <div class="card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, sunt similique minima eveniet rem, ipsum consequuntur iste nesciunt fugiat necessitatibus sit reiciendis aliquam nobis facilis quas? Placeat illum excepturi, nostrum aperiam aut voluptatibus vel soluta et adipisci sed asperiores hic laborum officia explicabo omnis vitae qui inventore deleniti eaque itaque, cum nulla tempora? Quibusdam, dicta? Eaque velit porro deleniti, aperiam consequuntur dicta eos officia nihil assumenda nesciunt commodi aliquam optio, ad, doloremque iure quibusdam dolores doloribus. Harum alias nulla cupiditate ipsam esse placeat molestiae illum, aliquid reiciendis aut accusamus quasi fugiat officia! Ullam rem eius ut excepturi dignissimos! Recusandae libero accusantium blanditiis! Eos aspernatur aliquid dignissimos aperiam explicabo placeat laboriosam, rem vel quo beatae maxime ab esse. In quae a iure ad accusantium, voluptatum porro eum quisquam qui. Harum autem libero deserunt maxime pariatur odit, sunt, facere nostrum voluptates laudantium est quaerat voluptatem similique a accusamus repudiandae suscipit, ullam quisquam inventore voluptas! Officiis reiciendis iure facilis perferendis maxime, minima odio asperiores, sequi temporibus quidem repellendus doloribus, possimus a fugiat quasi exercitationem consequuntur vitae. A modi, quia incidunt itaque, libero iste magni nesciunt aperiam nemo dignissimos, accusamus eius eligendi quo. Quis est enim repellendus ratione, ipsa maxime inventore culpa dicta ad possimus deserunt, laborum animi magni, vero asperiores ut quae at blanditiis obcaecati? Ipsa vero voluptatibus sed excepturi ipsam aliquid voluptatum doloribus! Molestias ullam ad dolor perferendis quae, nam error maxime libero dolores hic neque tenetur dignissimos illo amet eaque facilis architecto officia itaque accusantium cumque veritatis eos explicabo quam! Vero mollitia maiores nobis blanditiis nulla ratione nesciunt, earum dolorem molestias commodi ipsa fugit sit aperiam cumque numquam. Eos dolorum qui molestias amet fugiat temporibus ducimus cumque aperiam quam minima rem modi sunt, soluta blanditiis tempore optio excepturi libero nobis, vitae iure. Dolorum repellat laborum, nam ut id sed reiciendis odio mollitia nisi, asperiores laudantium vitae deserunt, quibusdam voluptatibus corporis culpa sint quia expedita architecto unde eligendi. Reprehenderit sed mollitia deserunt, saepe omnis accusamus id. Illum temporibus doloribus ab obcaecati architecto vel nesciunt odit.</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

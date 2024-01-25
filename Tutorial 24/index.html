@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            padding: 45px;
+            box-shadow: 5px 13px 7px 6px darkgrey;
+            border-radius: 100px;
+        }
+        p{
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 5px purple;
+        }
+        .outline{
+            outline: 2px solid green;
+            margin-top: 35px;
+            outline-offset: 7px;  /* This separates the outline and the element content and also outlines cannot be curved like borders using border-radius property */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>I am a box</p>
+    </div>
+    <div class="outline">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto recusandae velit laborum, cumque culpa iure dolore illo, ad voluptatibus corrupti ullam eveniet fuga maiores consequuntur sequi explicabo provident praesentium mollitia.
+    </div>
+</body>
+</html>

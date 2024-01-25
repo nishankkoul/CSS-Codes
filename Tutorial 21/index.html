@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* The specifity of below selector is 1 */
+        h1{
+            color:aqua
+        }
+        /* The specificity of all the below selectors are 10 each */
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: purple;
+        }
+        /* CSS stands for Cascading Stylesheets. The cascade is the Algorithm for solving conflicts where multiple CSS rules apply to an HTML element. It's the reason the text of the button styled will be purple. */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class = "yellow cred cpurple">Today, we'll learn about CSS Specificity & Cascading</h1>
+    </div>
+</body>
+</html>

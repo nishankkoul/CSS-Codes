@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Let us declare variables in CSS */
+        :root{
+            /* Whatever variables we create in the root are global variables */
+            --color: blue;
+            --secondaryColor: rgb(115, 115, 175);
+            /* Other than colors we can also create variables for other properties */
+            --defaultPadding: 45px;
+        }
+        div:first-child{
+            background-color: red;
+            /* After applying background-color: red; we know that the background will become red */
+            /* Now, lets change the background color using variables */
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li:first-child{
+            --color: rgb(219, 108, 17);
+            /* This color variable is the local variable inside this scope */
+            background-color: var(--color);
+        }
+        li{
+            padding: 20px;
+            /* Now we apply defaultPadding variable created inside the root element */
+            padding: var(--defaultPadding);
+            /* This will give a padding of 45px */
+        }
+        /* So basically the website is red colour themed */
+        .container{
+            background-color: rgb(236, 106, 106);
+            /* Lets change the background color of the container div as well */
+            background-color: var(--secondaryColor);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut alias atque ad, rerum, mollitia dolore quo praesentium est dolores possimus quisquam dicta illo ipsa autem consequatur molestias, aliquid animi optio! Molestiae, omnis! Dolorem atque sunt exercitationem ratione, architecto, rem officiis nobis eaque ullam quis beatae.
+    </div>
+</body>
+</html>

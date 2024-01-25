@@ -1,0 +1,5 @@
+There are 3 ways to CSS to HTML: 
+
+a. Inline CSS - This is used in an HTML page using style attribute
+b. Internal CSS - It means to add a style tag and place the HTML's page syle within it. 
+c. External CSS - It means to create a .css file and place all the styles in that file itself. 

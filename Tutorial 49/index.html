@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Cover</title>
+    <style>
+        /* Sometimes its tough to find the exact aspect ratio that will fit the entire container perfectly and might reduce the resolution of the image, that's why we use object fit and cover */
+        .container{
+            background-color: bisque;
+            width: 35vw;
+            height: 45vh;
+            border: 3px solid;
+        }
+        img{
+            width: 466px;
+            height: 450px;
+            /* object-fit: cover; ->This will fit the image based on the width and height provided in the img selector, but this might cut the image */
+            /* object-fit: contain; -> This won't cut the image but will not cover the desired pixels as well.  */
+            object-fit: cover;
+            object-position: top right; /* Here, top right part of the image will be shown and the object will cover desired pixels */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="b1.jpg" alt="">
+    </div>
+</body>
+</html>

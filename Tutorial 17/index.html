@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* There are certain drawbacks of an element selector beacause as soon as I create another div tag, its styling too will be same as what is specified below. */
+        div{
+            background-color: red;
+        }
+        /* Class selector */
+        .yellow{
+            /* This means selecting those elements whose class is yellow */
+            background-color: yellow;
+        }
+        /* Id Selector */
+        #green{
+            /* This means we are selecting the element whose id is green. Note: there can only be one element with id to be green coz id is unique */
+            background-color: green;
+        }
+        /* Child Selector */
+        /* This property only works for immediate child not child of child. For example - you can't apply this property to div article p. If you want to function it like this - use Descendant Selector*/
+        div > article{
+            color:yellow;
+            background-color: grey;
+        }
+        /* Descendant Selector */
+        /* The descendant element can be grandson or great grandson as well or even own child similar to child selector */
+        div p{
+            color:aqua;
+            background-color: black;
+        }
+        /* Universal Selector */
+        /* This is used for all elements */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        /* If any link is visited, then the color of the text should be yellow */
+        a:visited{
+            color: yellow;
+        }
+        /* If the link is not visited the color of the text should be by default green */
+        a:link{
+            color: green;
+        }
+        /* Show a red background whenever the link is clicked */
+        a:active{
+            background-color: red;
+        }
+        /* If the user hovers above the link, the background color should turn black */
+        a:hover{
+            background-color: black;
+        }
+        /* If span is the first child then apply this property */
+        span:first-child{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        I am a div
+    </div>
+
+    <div class = "yellow">
+        I am another div
+    </div>
+
+    <div id="green">
+        I am another another div
+    </div>
+
+    <div>
+        <article>I am another another another div</article>
+    </div>
+
+    <div>
+        <article>
+            <p>I am another another another another div</p>
+        </article>
+    </div>
+
+    <a href="https://www.google.com">Go To Google</a>
+    <a href="https://www.sonablogs.com">Go To Sona Blogs</a>
+
+    <main>
+        <span>I am first</span>
+        <span>I am second</span>
+    </main>
+</body>
+</html>

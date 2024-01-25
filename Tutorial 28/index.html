@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            margin: 34px;
+            padding: 43px;
+            border: 3px solid orangered;
+        }
+        .box{
+            border: 2px solid black;
+            height: 400px;
+            width: 80vw;
+            margin: 33px;
+            padding: 3px;
+        }
+        /* By default these boxes have static position */
+        .box1{
+            background-color: aqua;
+            /* Position sticky can be imagined as a navbar that'll always be there */
+            position: sticky;
+            top: 0px;
+        }
+        .box2{
+            background-color: azure;
+            position: relative;
+            top: 60px;
+            left: 34px;
+            /* because of the above css applied, box2 will come over box3 */
+            /* If we want box3 to come over box2, we use z-index property in box3 and we have to make box3's position relative too */
+        }
+        .box3{
+            background-color: blue;
+            position: relative;
+            z-index: 1;
+        }
+        .box4{
+            background-color: brown;
+            /* position absolute checks nearest ancestor's position and applies its own position relative to it */
+            /* position: absolute;
+            bottom: 0px;
+            right: 0px; */
+        }
+        .box5{
+            background-color:cadetblue;
+            /* Fixed position means it will remain fixed no matter if there's scrolling or not */
+            position: fixed;
+            bottom: 7px;
+            left: 15vw;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+</body>
+</html>

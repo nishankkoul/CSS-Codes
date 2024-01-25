@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 15vw;
+            height: 10vh;
+            /* Now the text will overflow and so we can use overflow properties */
+            overflow: scroll;
+            /* overflow: auto; -> This will automate overflow property, if the text is overflowing, it will automatically put a scroll bar otherwise nothing. */
+            white-space: nowrap; /* This will put the entire text in one single line */
+            /* we can also set properties individually */
+            /* overflow-y: scroll;
+            overflow-x: hidden; */
+        }
+    </style>
+</head>
+<body>
+    <div class = "box">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos non temporibus totam vitae rem perspiciatis quibusdam magni quisquam, sed ad accusantium at laboriosam esse tenetur sapiente dolor consequuntur! Facilis molestias id eveniet maxime enim alias earum deleniti fugiat voluptatibus tenetur excepturi omnis eius ratione odit eligendi beatae aut recusandae, illum reiciendis sit in rerum doloremque?
+    </div>
+</body>
+</html>

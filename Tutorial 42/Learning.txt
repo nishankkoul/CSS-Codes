@@ -1,0 +1,5 @@
+There are 2 types of transforms: 
+
+i. 2D transforms - This property allows the content to be restructured in ways like translate, rotate, scale or skew etc. As it is 2D, therefore the content is transformed into 2 or 3 dimensions.
+
+ii. 3D transforms - It results in 3D transforms and consists of z-axis. 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1{
+            border: 2px solid pink;  /* We know this will occupy the entire width of the screen coz div is a block element */
+            padding: 45px;  /* Will not add padding from the top because it doesn't respect inline elements */
+            margin: 23px;   /* Same goes with margin top */
+            /* So if we use display: inline-block, this property will be solved */
+            display: inline-block;
+            /* Width can be properly set when using display: inline-block */
+            width: 400px;
+        }
+
+        /* .box2{
+            /* display: none; -> This property removes the entire div with the entire space as well  */
+            /* visibility: hidden; -> The div element will be hidden, but the space it occupied will remain as it is. } */
+    </style>
+  </head>
+  <body>
+    <div class="box1 box2">  <!--Div is a block element-->
+        I am a box
+    </div>
+
+    <div class="box1">
+        I am another box
+    </div>
+
+    <span>I am a good</span>  <!--Since span is an inline element, I am a good boy will occur together, no break-->
+    <span>boy</span>
+  </body>
+</html>

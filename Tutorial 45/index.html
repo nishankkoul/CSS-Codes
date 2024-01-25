@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: aqua;
+            width: 5vw;
+            height: 4vh;
+            /* Transition properties are built over 4 built in css properties */
+            transition-property: all; /* We can also apply it to single properties as like -> transition: transform */
+            /* If we only want to apply transition to 2 or 3 properties, we can use comma separated values */
+            transition-duration: 3s; /* Kitni der tak chalega transition */
+            transition-timing-function: ease-in-out; /* Using dev tools in inspect, you can also use a cubic-beizer function for your desired timing function */
+            transition-delay: 1s;  /* Kitne der baad hoga transition */
+            /* Go to inspect and see the transition by unselecting and selecting the transform property */
+            /* All these transition properties can also be applies only using 1 transition */
+            /* transition: all 3s ease-in-out 1s; */
+        }
+        .translate{
+            transform: translateX(5vw) translateY(5vh); /* This will translate the box within a second but we want it smoothly. */
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">
+
+        </div>
+    </div>
+</body>
+</html>

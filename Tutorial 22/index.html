@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: aqua;
+            /* width: 1534px;*/
+            /* pixel is a relative unit and differs from device to device, so its better to use vw */
+            width:80vw;  
+            /* But if we want to center the element from both left and right, we can use margin:auto but it only applies to block level element not inline element */
+            margin:auto;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: aqua;
+            width: 80vw;  
+            margin: 23px auto;  /* Here 23px is top bottom margin and auto is left right margin */
+            /* For height we use vh, which works similar to vw */
+            height: 75vh;
+        } 
+
+        .container p{
+            font-size: 2em; /* Default size of p would be 16px, but when we do font-size:2em, the size of p becomes 2 * 16 = 32px */
+            width: 50%;  /* Percentage unit is used wrt to the parent width i.e. 50% of container's width*/
+            border: 2px solid red;
+
+        }
+        /* Suppose the root element's font size is 12px */
+        html{
+            font-size: 12px;
+        }
+
+        p{
+            font-size: 2rem; /* Font size will become 2 times the size of the root element i.e. html element */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rem odio ratione voluptatum modi sequi tenetur quisquam qui exercitationem natus maxime vero molestiae, animi obcaecati similique earum culpa fugit quas laborum? Repellendus, quasi quia.
+        </p>
+
+    </div>
+</body>
+</html>

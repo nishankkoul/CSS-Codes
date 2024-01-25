@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Cover</title>
+    <style>
+        /* Sometimes its tough to find the exact aspect ratio that will fit the entire container perfectly and might reduce the resolution of the image, that's why we use object fit and cover */
+        .container{
+            background-color: bisque;
+            width: 30vw;
+            height: 25vh;
+            border: 3px solid;
+            /* Instead of creating a new class and using object fit and cover, we can directly put the background image in the parent class */
+            background-image: url("b1.jpg"); /* Now, we can see that only some portion of the image is filled because of the container's aspect ratio */
+            /* Here we can use background position property and see the part of the image we want to see */
+            /* background-position: top right; */
+            background-position: center center;
+            /* If there is a smaller image than the container width and height, then the image will repeat itself and if we don't want that to happen, we can set background-repeat as no-repeat */
+            /* background-repeat: no-repeat; */
+            /* Or we can also tell where to repeat like repeat-x OR repeat-y */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+</body>
+</html>

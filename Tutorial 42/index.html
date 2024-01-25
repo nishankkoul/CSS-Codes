@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+            
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* transform: rotate(55deg); -> This will rotate the box by 55 degrees */  
+            /* transform: rotate(0.25turn); -> This will turn the box by 90 degrees since 1 turn = 360 deg */
+            /* We can also rotate the box about x, y or z-axis */
+            /* transform: rotateY(60deg);  */
+            /* transform: scale(1.5); -> This will increase the size of the box by 1.5 */
+            /* transform: skew(44deg); ->Kind of pull the box from bottom right but doesn't work in z-axis */
+            /* transform: translateY(40%); ->This will shift the box wrt the axis 40% of its width */
+            /* If we want to apply multiple transform properties we can use a space in between and apply the properties */
+            /* transform: translateY(45%) skew(44deg); */
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
